@@ -1,6 +1,6 @@
 ---
 layout: freund
-title: Henri
+name: Henri
 type: freund
 image: henri.jpg
 ---

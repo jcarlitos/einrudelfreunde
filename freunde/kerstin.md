@@ -1,6 +1,6 @@
 ---
 layout: freund
-title: Kerstin
+name: Kerstin
 type: freund
 image: kerstin.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 layout: freund
-title: Kabab
+name: Kabab
 type: freund
 image: kabab.jpg
 ---

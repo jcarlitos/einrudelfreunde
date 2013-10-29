@@ -1,6 +1,6 @@
 ---
 layout: freund
-title: Enni
+name: Enni
 type: freund
 image: enni.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 layout: freund
-title: Hedda
+name: Hedda
 type: freund
 image: hedda.jpg
 ---

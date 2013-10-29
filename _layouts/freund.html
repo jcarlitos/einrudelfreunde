@@ -3,3 +3,13 @@ layout: default
 ---
 
 <h1>Freunde-Seite</h1>
+
+<ul>
+    {% for freund in site.categories.enni %}
+
+            <li>
+                <h3>{{ freund.title }}</h3>
+            </li>
+
+    {% endfor %}
+</ul>
