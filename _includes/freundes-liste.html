@@ -3,11 +3,11 @@
         {% if freund.type == include.type %}
             <li>
                 <a href="{{freund.url}}">
-                    <img src="/img/freunde/{{freund.image}}" />
+                    <img src="{{site.baseurl}}/img/freunde/{{freund.image}}" />
                     <h3>{{freund.title}}</h3>
                 </a>
                 {{freund.content}}
-                <a href="{{freund.url}}">zum Profil</a>
+                <a href="{{site.baseurl}}/{{freund.url}}">zum Profil</a>
             </li>
         {% endif %}
     {% endfor %}

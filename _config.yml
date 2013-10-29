@@ -1,4 +1,7 @@
 name: Ein Rudel Freunde
+markdown: redcarpet
+baseurl: /einrudelfreunde
+exclude: ['README.md']
 pygments: true
 permalink: pretty
 destination: ./_publish
