@@ -1,0 +1,6 @@
+name: Ein Rudel Freunde
+pygments: true
+permalink: pretty
+destination: ./_publish
+paginate: 10
+# paginate_path: "blog/page:num"

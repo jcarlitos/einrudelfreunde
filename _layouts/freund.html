@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Freunde</h1>
+123
+<ul>
+    {% for freund in site.categories.enni %}
+        <li>
+            {{% freund.title %}}
+        </li>
+    {% endfor %}
+</ul>

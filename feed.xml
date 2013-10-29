@@ -1,0 +1,33 @@
+---
+layout: nil
+---
+
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Ein Rudel Freunde</title>
+  <link href="http://localhost"/>
+  <link type="application/atom+xml" rel="self" href="http://localhost/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://localhost/</id>
+  <author>
+    <name>Your Name</name>
+    <email>you@localhost</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://localhost/{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://localhost{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://localhost/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>
