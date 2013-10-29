@@ -5,7 +5,7 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1>
+  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ post.date }}</span>
   </p>
@@ -18,7 +18,7 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
       {% if paginator.previous_page == 1 %}
         <a href="/">Previous</a>
       {% else %}
-        <a href="{{site.baseurl}}/{{ paginator.previous_page_path }}">Previous</a>
+        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Previous</a>
       {% endif %}
     </p>
   {% else %}
@@ -41,7 +41,7 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
         {% if count == paginator.page %}
           <span class="current-page">{{ count }}</span>
         {% else %}
-          <a href="{{site.baseurl}}/page{{ count }}">{{ count }}</a>
+          <a href="{{ site.baseurl }}/page{{ count }}">{{ count }}</a>
         {% endif %}
       </li>
     {% endfor %}
@@ -49,7 +49,7 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
 
   {% if paginator.next_page %}
     <p class="next">
-      <a href="{{site.baseurl}}/{{ paginator.next_page_path }}">Next</a>
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">Next</a>
     </p>
   {% else %}
     <p class="next disabled">
