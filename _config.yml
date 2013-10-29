@@ -4,6 +4,5 @@ baseurl: /einrudelfreunde
 exclude: ['README.md']
 pygments: true
 permalink: pretty
-destination: ./_publish
 paginate: 10
 # paginate_path: "blog/page:num"
