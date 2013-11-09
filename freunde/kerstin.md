@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Kerstin
-type: freund
+layout: category
+title: Kerstin
+type: kerstin
 image: kerstin.jpg
 ---
 

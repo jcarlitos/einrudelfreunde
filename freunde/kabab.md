@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Kabab
-type: freund
+layout: category
+title: Kabab
+type: kabab
 image: kabab.jpg
 ---
 

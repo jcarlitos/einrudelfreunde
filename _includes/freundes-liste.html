@@ -1,10 +1,10 @@
 <ul>
     {% for freund in site.pages %}
-        {% if freund.type == include.type %}
+        {% if freund.title == include.title %}
             <li>
                 <a href="{{ site.baseurl }}{{ freund.url }}">
                     <img src="{{ site.baseurl }}/img/freunde/{{ freund.image }}" />
-                    <h3>{{ freund.name }}</h3>
+                    <h3>{{ freund.title }}</h3>
                 </a>
                 {{ freund.content }}
                 <a href="{{ site.baseurl }}{{ freund.url }}">zum Profil</a>

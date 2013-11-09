@@ -1,7 +1,7 @@
 ---
-layout: freund
+layout: category
 name: Theo
-type: freund
+type: theo
 image: theo.jpg
 ---
 

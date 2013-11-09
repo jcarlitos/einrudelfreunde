@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Tessa
-type: freund
+layout: category
+title: Tessa
+type: tessa
 image: tessa.jpg
 ---
 

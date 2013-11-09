@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Enni
-type: freund
+layout: category
+title: Enni
+type: enni
 image: enni.jpg
 ---
 

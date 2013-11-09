@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Hedda
-type: freund
+layout: category
+title: Hedda
+type: hedda
 image: hedda.jpg
 ---
 

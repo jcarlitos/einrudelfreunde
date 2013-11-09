@@ -1,7 +1,7 @@
 ---
-layout: freund
-name: Henri
-type: freund
+layout: category
+title: Henri
+type: henri
 image: henri.jpg
 ---
 

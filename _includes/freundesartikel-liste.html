@@ -1,0 +1,9 @@
+<ul>
+    {% for freund in site.categories %}
+        {% if freund.categories == include.categories %}
+            <li>
+                <h3>{{ freund.title }}</h3>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
