@@ -1,13 +1,26 @@
 ---
 layout: default
 ---
-<h1>Simple Category Pages with vanilla Jekyll</h1>
 
 {% unless page.content == '' %}
-  <p>{{ page.content }}</p>
+    <p>{{ page.content }}</p>
 {% endunless %}
 
 {% for post in site.categories.[page.type] %}
-  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-  <p></p>
+    <article class="h-entry" role="article">
+        <header>
+            <h2 class="p-title">
+                <a class="p-url" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h2>
+            <a class="p-url" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+                <time class="p-published" pubdate="" datetime="{{ post.date }}">{{ post.date }}</time>
+            </a>
+        </header>
+        <div class="e-content">
+          <p>{{ post.excerpt }}</p>
+          <p class="keepreading">
+            <a class="p-url" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">weiterlesen</a>
+          </p>
+        </div>
+    </article>
 {% endfor %}
