@@ -13,7 +13,7 @@ layout: default
                 <a class="p-url" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
             </h2>
             <a class="p-url" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
-                <time class="p-published" pubdate="" datetime="{{ post.date }}">{{ post.date }}</time>
+                <time class="p-published" pubdate="" datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time>
             </a>
         </header>
         <div class="e-content">
