@@ -11,12 +11,10 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
       <section>
         <header>
           <h1>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            {{ post.date | date_to_long_string }}
           </h1>
           <h2>
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                {{ post.date | date_to_long_string }}
-            </a>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </h2>
         </header>
         <p>{{ post.excerpt }}</p>
