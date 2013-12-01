@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
-
-{% if page.previous %}
-    <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
-{% endif %}
-{% if page.next %}
-    <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}">&rarr; {{ page.next.title }}</a>
-{% endif %}
+<article class="h-entry" role="article">
+  <header>
+    <h1 class="p-title">{{ page.title }}</h2>
+    <h2>
+      <time class="p-published" datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time>
+    </h2>
+  </header>
+  <div class="post">
+  {{ content }}
+  </div>
+  <footer>
+    {% if page.previous %}
+        <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next %}
+        <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}">&rarr; {{ page.next.title }}</a>
+    {% endif %}
+  </footer>
+</article>

@@ -10,19 +10,20 @@
 $grids: 4;
 //$grids: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
 $grids: add-grid(6 at 30em);
-$grids: add-grid(9 at 40em);
+$grids: add-grid(8 at 40em);
 $grids: add-grid(12 at 50em);
 
 html{
     @include background-grid;
 }
 .content {
+    @include background-grid;
     max-width: 992px;
     margin: 0 auto;
     min-height: 100%;
 }
 [role="main"] {
-    @include grid-span(2, 1);
+    @include grid-span(4, 1);
     background: red;
     @include breakpoint(30em) {
     @include grid-span(4, 1);
