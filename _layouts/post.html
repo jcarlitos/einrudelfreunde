@@ -3,12 +3,12 @@ layout: default
 ---
 <article class="h-entry" role="article">
   <header>
-    <h1 class="p-title">{{ page.title }}</h2>
+    <h1 class="p-name">{{ page.title }}</h2>
     <h2>
-      <time class="p-published" datetime="{{ page.date | date_to_string }}">{{ page.date | date_to_string }}</time>
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
     </h2>
   </header>
-  <div class="post">
+  <div class="e-content">
   {{ content }}
   </div>
   <footer>

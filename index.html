@@ -4,21 +4,12 @@ title: Ein Rudel Freunde  - Dein Blog über Hunde
 ---
 
 <section>
+  
   <h1>Wir sind</h1>
     <p>Wir sind Ein Rudel Freunde, eine Berliner Liebesgeschichte mit mal mehr und mal weniger viel Beinen, jedoch, dem Herz stets am rechten Fleck. Das behaupten wir nicht von uns selbst, sondern jeder von den anderen, so dass alle gut bei weg kommen. Wir entdecken die Welten in und um uns, suhlen uns in Mist und Freude und wissen nicht genau warum, aber teilen dies hier mit euch.</p>
 
     {% for post in site.posts limit:5 %}
-      <section>
-        <header>
-          <h1>
-            {{ post.date | date_to_long_string }}
-          </h1>
-          <h2>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </h2>
-        </header>
-        <p>{{ post.excerpt }}</p>
-        <a href="{{ site.baseurl }}{{ post.url }}">weiterlesen</a>
-      </section>
+      {% include artikelTeaser.html %}
     {% endfor %}
+
 </section>

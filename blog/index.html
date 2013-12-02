@@ -5,22 +5,7 @@ title: Ein Rudel Freunde  - Blog
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <article class="h-entry" role="article">
-    <div class="freunde_image">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <img src="{{ site.baseurl }}/img/freunde/{{ post.image }}" />
-        </a>
-    </div>
-    <div class="entry">
-        <h2 class="entry-title">{{ post.title }}</h2>
-    </div>
-    <div class="entry-content">
-        <p>{{ post.excerpt }}</p>
-        <p class="keepreading">
-            <a href="{{ site.baseurl }}{{ post.url }}">weiterlesen</a>
-        </p>
-    </div>
-  </article>
+  {% include artikelTeaser.html %}
 {% endfor %}
 
 <!-- Pagination links -->

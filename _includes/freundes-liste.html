@@ -1,20 +1,14 @@
-    {% for freund in site.pages %}
-        {% if freund.title == include.title %}
-            <article class="h-entry" role="article">
-                <div class="freunde_image">
-                    <a href="{{ site.baseurl }}{{ freund.url }}">
-                        <img src="{{ site.baseurl }}/img/freunde/{{ freund.image }}" />
-                    </a>
-                </div>
-                <div class="entry">
-                    <h2 class="entry-title">{{ freund.title }}</h2>
-                </div>
-                <div class="entry-content">
-                    <p>{{ freund.content }}</p>
-                    <p class="keepreading">
-                        <a href="{{ site.baseurl }}{{ freund.url }}">zum Profil</a>
-                    </p>
-                </div>
-            </article>
-        {% endif %}
-    {% endfor %}
+{% for freund in site.pages %}
+  {% if freund.title == include.title %}
+    <section>
+      <header>
+        <h1>{{ freund.title }}</h1>
+        <a href="{{ site.baseurl }}{{ freund.url }}">
+          <img src="{{ site.baseurl }}/img/freunde/{{ freund.image }}" />
+        </a>
+      </header>
+      <p>{{ freund.content }}</p>
+      <a href="{{ site.baseurl }}{{ freund.url }}">zum Profil</a>
+    </section>
+  {% endif %}
+{% endfor %}
